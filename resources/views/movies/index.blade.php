@@ -18,6 +18,7 @@
 
                                 <p class="card-text">Language: {{ $movie->language }}</p>
 
+                                <a href="{{ route('movies.show', $movie->id) }}" class="btn btn-primary">Show details</a>
                             </div>
                         </div>
                     </div>
