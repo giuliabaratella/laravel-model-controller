@@ -4,8 +4,8 @@
 
 @section('content')
     <main>
-        <div class="container">
-            <h1>Movies</h1>
+        <div id="movie-list" class="container py-5">
+            <h1 class="text-uppercase">Movies</h1>
 
             <div class="row row-gap-4">
                 @foreach ($movies as $movie)
@@ -16,9 +16,7 @@
                                 <h5 class="card-title">{{ $movie->title }}</h5>
                                 <h6 class="card-title">{{ $movie->original_title }}</h6>
 
-                                <p class="card-text">Language: {{ $movie->language }}</p>
-
-                                <a href="{{ route('movies.show', $movie->id) }}" class="btn btn-primary">Show details</a>
+                                <a href="{{ route('movies.show', $movie->id) }}" class="btn">Show details</a>
                             </div>
                         </div>
                     </div>

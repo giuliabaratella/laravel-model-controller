@@ -8,14 +8,52 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
-
+body {
+    background-color: $dark;
+    color: $white;
+}
 h1{
-    color: $text-color;
+    color: $primary;
+}
+.btn {
+    background-color: $primary !important;
+}
+
+header{
+    .navbar{
+        background-color: $mid-dark !important;
+        .navbar-brand{
+            font-size: 2em;
+        }
+        a{
+            color: $light !important;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            &:hover{
+                color: $primary !important;
+            }
+        }
+    }
+}
+#movie-list{
+.card{
+    background-color: $mid-dark;
+    color: $white !important;
+    height: 100%;
+}
 }
 #movie-detail{
+    h1{
+        color: $primary;
+    }
     .img-box{
         img{
             width: 100%;
         }
     }
+}
+footer{
+    background-color: $primary;
+    color: $white;
+
 }
